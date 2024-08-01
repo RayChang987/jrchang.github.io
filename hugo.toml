@@ -1,4 +1,11 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = "Ray's blog"
 theme = 'PaperMod'
+
+
+  
+[[languages.en.menu.main]]
+name = "Posts"
+url = "posts"
+weight = 5
