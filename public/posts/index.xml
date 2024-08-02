@@ -2,18 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Ray&#39;s blog</title>
-    <link>http://localhost:45489/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Ray&#39;s blog</description>
     <generator>Hugo -- 0.130.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 01 Aug 2024 22:04:05 +0800</lastBuildDate>
-    <atom:link href="http://localhost:45489/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hello World</title>
-      <link>http://localhost:45489/posts/hello-world/</link>
+      <title>TUPC 2024 心得</title>
+      <link>http://localhost:1313/posts/tupc_ref/</link>
       <pubDate>Thu, 01 Aug 2024 22:04:05 +0800</pubDate>
-      <guid>http://localhost:45489/posts/hello-world/</guid>
-      <description>H1 H2 Test Test Test Test Test Test Test Test Test Test Test Test Test</description>
+      <guid>http://localhost:1313/posts/tupc_ref/</guid>
+      <description>開賽沒幾分鐘， @廂閎 施 就發現pA是大水題，直接上機，沒過多久就過了(超電)。隨後我打開pD發現可以直接爆搜，但第一次實作沒弄好，只好讓 @廂閎 施先來寫pB，沒過多久他又過了==。 @張睿麟Jovi 發現這次沒有pI，只要少寫一題一定很慘。
+我繼續寫D的爆搜，但還是寫不好，其實有點緊張。 @廂閎 施 發現pC是dp，於是只好又換 @廂閎 施 上來寫，不到10分鐘他又寫完了==。這時候又更緊張了一點，因為我看的pD, pE, pF一題都沒寫出來，感覺我很搞。冷靜下來後，pD終於實作完成了。再來pE只是一個簡單的分治，但題目要求了兩種表示法，要寫得東西比較多，於是又弄了很久，才把pE給寫完(penalty*1)。我pE上機了超級久，這個時候 @張睿麟Jovi @廂閎 施 開始大談pG, pH。至於pF，在開題目的時，就看出這是max-minimum flow裸題，但我從來沒有寫過，只好根據我的理解寫寫看，結果沒意外TLE了。
+這時候時間大概還有30~40分鐘，我們有兩個選擇，把pF修成TLE，或是寫pG或pH。跟 @張睿麟Jovi 討論過後，發現pH太難了，pF我又修不好， @張睿麟Jovi @廂閎 施 就開始跟我解釋pG的題目，發現可以用convex hull來解決，而且convex hull在我們的code book上面。我把演算法實作完之後，過了範測，但當時其他edge cases沒有考慮很清楚，交了一堆WA(penalty*5)。 時間剩下五分鐘，@張睿麟Jovi 發現有一行continue的註解沒打開，應該要打開才對，我聽他的把註解打開，然後一邊說”不可能啦我們交過完全一樣的程式碼欸”，下一秒，就AC了。只能說，沒有 @張睿麟Jovi 我們一定超慘。
+到這邊，我們所有答題也結束了。雖然只是區域賽的子賽，但也化解了一點沒有在高中選擇競技程式的遺憾，也兌現了之前打CF一小段時間的努力。最後，感謝我的隊友 @張睿麟Jovi 和 @廂閎 施 ，團練都有到，跟當初說得一樣。 好險@廂閎 施 一直叫我去比賽，不然我甚至可能今天都不比了。</description>
     </item>
   </channel>
 </rss>
