@@ -1,6 +1,7 @@
 +++
 title = 'TUPC 2024 心得'
 date = 2024-08-01T22:04:05+08:00
+url = '/articles/my-first-article.html'
 draft = false
 +++
 
