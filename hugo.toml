@@ -1,7 +1,8 @@
-baseURL = 'https://raychang987.github.io/jrchang.github.io/'
+baseURL = 'https://raychang987.github.io/'
 languageCode = 'en-us'
 title = "Ray's blog"
 theme = 'PaperMod'
+canonifyURLs = true
 
 
   
