@@ -2,7 +2,7 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = "Ray's blog"
 theme = 'PaperMod'
-canonifyURLs = true
+canonifyURLs = 'true'
 
   
 [[languages.en.menu.main]]
