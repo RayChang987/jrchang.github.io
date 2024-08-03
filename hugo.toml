@@ -5,11 +5,6 @@ theme = 'PaperMod'
 enableEmoj =  true
 
 
-  
-[[languages.en.menu.main]]
-name = "Posts"
-url = "posts"
-weight = 5
 
 
 
