@@ -9,7 +9,7 @@
 <title>Ray&#39;s blog</title>
 
 <meta name="description" content="">
-<meta name="author" content="">
+<meta name="author" content="David Hwang">
 <link rel="canonical" href="http://localhost:1313/jrchang.github.io/">
 <link crossorigin="anonymous" href="/jrchang.github.io/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/jrchang.github.io/favicon.ico">
@@ -101,16 +101,70 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/jrchang.github.io/posts" title="Posts">
-                    <span>Posts</span>
+                <a href="http://localhost:1313/jrchang.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/jrchang.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/jrchang.github.io/archives/" title="Archives">
+                    <span>Archives</span>
                 </a>
             </li>
         </ul>
     </nav>
 </header>
 <main class="main"> 
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>the dev playbook</h1>
+    </header>
+    <div class="entry-content">
+        <p>Welcome to the <strong>dev playbook</strong> 🎉</p>
+<ul>
+<li>This is a space where I will mostly be sharing about Go &amp; Kubernetes 🙂</li>
+</ul>
+    </div>
+    <footer class="entry-footer">
+        <div class="social-icons" >
+    <a href="https://github.com/dhij" target="_blank" rel="noopener noreferrer me"
+        title="Github">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+    </a>
+    <a href="https://www.youtube.com/@dhij" target="_blank" rel="noopener noreferrer me"
+        title="Youtube">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+    </path>
+    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+</svg>
+    </a>
+    <a href="index.xml" target="_blank" rel="noopener noreferrer me"
+        title="Rss">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+    </a>
+</div>
 
-<article class="first-entry"> 
+    </footer>
+</article>
+
+<article class="post-entry"> 
   <header class="entry-header">
     <h2 class="entry-hint-parent">TUPC 2024 心得
     </h2>
@@ -121,8 +175,22 @@
 這時候時間大概還有30~40分鐘，我們有兩個選擇，把pF修成TLE，或是寫pG或pH。跟 @張睿麟Jovi 討論過後，發現pH太難了，pF我又修不好， @張睿麟Jovi @廂閎 施 就開始跟我解釋pG的題目，發現可以用convex hull來解決，而且convex hull在我們的code book上面。我把演算法實作完之後，過了範測，但當時其他edge cases沒有考慮很清楚，交了一堆WA(penalty*5)。 時間剩下五分鐘，@張睿麟Jovi 發現有一行continue的註解沒打開，應該要打開才對，我聽他的把註解打開，然後一邊說”不可能啦我們交過完全一樣的程式碼欸”，下一秒，就AC了。只能說，沒有 @張睿麟Jovi 我們一定超慘。
 到這邊，我們所有答題也結束了。雖然只是區域賽的子賽，但也化解了一點沒有在高中選擇競技程式的遺憾，也兌現了之前打CF一小段時間的努力。最後，感謝我的隊友 @張睿麟Jovi 和 @廂閎 施 ，團練都有到，跟當初說得一樣。 好險@廂閎 施 一直叫我去比賽，不然我甚至可能今天都不比了。</p>
   </div>
-  <footer class="entry-footer"><span title='2024-08-01 22:04:05 +0800 CST'>August 1, 2024</span></footer>
+  <footer class="entry-footer"><span title='2024-08-01 22:04:05 +0800 CST'>August 1, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;David Hwang</footer>
   <a class="entry-link" aria-label="post link to TUPC 2024 心得" href="http://localhost:1313/jrchang.github.io/docs/tupc_ref/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Deploying a Blog Powered by Hugo to Github Pages w/ Custom Domain via Github Actions
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This post provides a step-by-step guide on how you can create this blog powered by Hugo, configure Github Actions to publish to Github Pages, and link custom domain to your Github Pages.
+This guide is also available on Youtube here.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-02-19 11:42:25 -0500 -0500'>February 19, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;David Hwang</footer>
+  <a class="entry-link" aria-label="post link to Deploying a Blog Powered by Hugo to Github Pages w/ Custom Domain via Github Actions" href="http://localhost:1313/jrchang.github.io/docs/test/"></a>
 </article>
     </main>
     
