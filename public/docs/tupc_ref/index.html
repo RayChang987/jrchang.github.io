@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/jrchang.github.io/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=jrchang.github.io/livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>TUPC 2024 心得 | Ray&#39;s blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="開賽沒幾分鐘， @廂閎 施 就發現pA是大水題，直接上機，沒過多久就過了(超電)。隨後我打開pD發現可以直接爆搜，但第一次實作沒弄好，只好讓 @廂閎 施先來寫pB，沒過多久他又過了==。 @張睿麟Jovi 發現這次沒有pI，只要少寫一題一定很慘。
+我繼續寫D的爆搜，但還是寫不好，其實有點緊張。 @廂閎 施 發現pC是dp，於是只好又換 @廂閎 施 上來寫，不到10分鐘他又寫完了==。這時候又更緊張了一點，因為我看的pD, pE, pF一題都沒寫出來，感覺我很搞。冷靜下來後，pD終於實作完成了。再來pE只是一個簡單的分治，但題目要求了兩種表示法，要寫得東西比較多，於是又弄了很久，才把pE給寫完(penalty*1)。我pE上機了超級久，這個時候 @張睿麟Jovi @廂閎 施 開始大談pG, pH。至於pF，在開題目的時，就看出這是max-minimum flow裸題，但我從來沒有寫過，只好根據我的理解寫寫看，結果沒意外TLE了。
+這時候時間大概還有30~40分鐘，我們有兩個選擇，把pF修成TLE，或是寫pG或pH。跟 @張睿麟Jovi 討論過後，發現pH太難了，pF我又修不好， @張睿麟Jovi @廂閎 施 就開始跟我解釋pG的題目，發現可以用convex hull來解決，而且convex hull在我們的code book上面。我把演算法實作完之後，過了範測，但當時其他edge cases沒有考慮很清楚，交了一堆WA(penalty*5)。 時間剩下五分鐘，@張睿麟Jovi 發現有一行continue的註解沒打開，應該要打開才對，我聽他的把註解打開，然後一邊說”不可能啦我們交過完全一樣的程式碼欸”，下一秒，就AC了。只能說，沒有 @張睿麟Jovi 我們一定超慘。
+到這邊，我們所有答題也結束了。雖然只是區域賽的子賽，但也化解了一點沒有在高中選擇競技程式的遺憾，也兌現了之前打CF一小段時間的努力。最後，感謝我的隊友 @張睿麟Jovi 和 @廂閎 施 ，團練都有到，跟當初說得一樣。 好險@廂閎 施 一直叫我去比賽，不然我甚至可能今天都不比了。">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/jrchang.github.io/docs/tupc_ref/">
+<link crossorigin="anonymous" href="/jrchang.github.io/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/jrchang.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/jrchang.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/jrchang.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/jrchang.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/jrchang.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/jrchang.github.io/docs/tupc_ref/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/jrchang.github.io/" accesskey="h" title="Ray&#39;s blog (Alt + H)">Ray&#39;s blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/jrchang.github.io/posts" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      TUPC 2024 心得
+    </h1>
+    <div class="post-meta"><span title='2024-08-01 22:04:05 +0800 CST'>August 1, 2024</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>開賽沒幾分鐘， @廂閎 施 就發現pA是大水題，直接上機，沒過多久就過了(超電)。隨後我打開pD發現可以直接爆搜，但第一次實作沒弄好，只好讓 @廂閎 施先來寫pB，沒過多久他又過了==。 @張睿麟Jovi 發現這次沒有pI，只要少寫一題一定很慘。</p>
+<p>我繼續寫D的爆搜，但還是寫不好，其實有點緊張。 @廂閎 施 發現pC是dp，於是只好又換 @廂閎 施 上來寫，不到10分鐘他又寫完了==。這時候又更緊張了一點，因為我看的pD, pE, pF一題都沒寫出來，感覺我很搞。冷靜下來後，pD終於實作完成了。再來pE只是一個簡單的分治，但題目要求了兩種表示法，要寫得東西比較多，於是又弄了很久，才把pE給寫完(penalty*1)。我pE上機了超級久，這個時候 @張睿麟Jovi @廂閎 施 開始大談pG, pH。至於pF，在開題目的時，就看出這是max-minimum flow裸題，但我從來沒有寫過，只好根據我的理解寫寫看，結果沒意外TLE了。</p>
+<p>這時候時間大概還有30~40分鐘，我們有兩個選擇，把pF修成TLE，或是寫pG或pH。跟 @張睿麟Jovi 討論過後，發現pH太難了，pF我又修不好， @張睿麟Jovi @廂閎 施 就開始跟我解釋pG的題目，發現可以用convex hull來解決，而且convex hull在我們的code book上面。我把演算法實作完之後，過了範測，但當時其他edge cases沒有考慮很清楚，交了一堆WA(penalty*5)。 時間剩下五分鐘，@張睿麟Jovi 發現有一行continue的註解沒打開，應該要打開才對，我聽他的把註解打開，然後一邊說”不可能啦我們交過完全一樣的程式碼欸”，下一秒，就AC了。只能說，沒有 @張睿麟Jovi 我們一定超慘。</p>
+<p>到這邊，我們所有答題也結束了。雖然只是區域賽的子賽，但也化解了一點沒有在高中選擇競技程式的遺憾，也兌現了之前打CF一小段時間的努力。最後，感謝我的隊友 @張睿麟Jovi 和 @廂閎 施 ，團練都有到，跟當初說得一樣。 好險@廂閎 施 一直叫我去比賽，不然我甚至可能今天都不比了。</p>
+<p><img loading="lazy" src="/docs/img1.jpg#left" alt="img1"  />
+</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/jrchang.github.io/">Ray&#39;s blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
