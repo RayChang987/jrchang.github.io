@@ -1,12 +1,16 @@
+title = "Ray's blog"
 baseURL = 'https://raychang987.github.io/jrchang.github.io/'
 languageCode = 'en-us'
-title = "Ray's blog"
 theme = 'PaperMod'
 enableEmoj =  true
-
-
-
-
+canonifyURLs = true
+RelativeURLs = true
+googleAnalytics = ""
+enableRobotsTXT = true
+Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+MetaDataFormat = "yaml"
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
 
 [params]
 author = "David Hwang"
