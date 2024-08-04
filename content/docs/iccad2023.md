@@ -1,8 +1,9 @@
 +++
-title = 'ICCAD2023 心得'
+title = 'ICCAD Contest 2023 Problem B  心得'
 date = 2023-09-28T19:30:42+08:00
 draft = false
 tags = [ "心得" ]
+author = "Ray"
 categories = [ "心得" ]
 +++
 
