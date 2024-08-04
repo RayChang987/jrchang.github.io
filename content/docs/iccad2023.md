@@ -5,6 +5,7 @@ draft = false
 tags = [ "心得" ]
 author = "Ray"
 categories = [ "心得" ]
+featured_image =  "/iccad2023_1.jpg"
 +++
 
 當時看到這個比賽，覺得有一點像是Atcoder的heuristic contest，好像很好玩的樣子，就找了 @楷傑 林 和 @Ice Frost 一起參加。正好前一陣子用了GA寫數獨，我以為這跟數獨一樣好玩(?)。
