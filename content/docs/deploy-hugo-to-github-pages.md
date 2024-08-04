@@ -148,7 +148,7 @@ Note: the content will be deployed to `https://<username>.github.io/<repository_
 
 Note: the DNS check will initially be unsuccessful
 
-![Namecheap DNS Records](/docs/namecheap_dns_records.jpg#left)
+![Namecheap DNS Records](/docs/namecheap_dns_records.JPG#left)
 
 - Configure an apex domain by adding IP addresses for Github Pages as instructed [here](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain). As recommended there, set up a `www` subdomain as well by creating a CNAME record that points to `<username>.github.io`. If you are using Namecheap, you will have records that look something like the image above. The instructions are available [here](https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages/)
 
