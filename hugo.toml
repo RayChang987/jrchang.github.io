@@ -13,28 +13,28 @@ DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
 
 [params]
-author = "David Hwang"
+author = "Ray"
 ShowReadingTime = true
 ShowShareButtons = true
 
   [params.homeInfoParams]
-  Title = "the dev playbook"
+  Title = "Ray's blog"
   Content = """
-Welcome to the **dev playbook** 🎉
-- This is a space where I will mostly be sharing about Go & Kubernetes 🙂
+1. 平常會寫一些垃圾文章。
+2. 假裝自己會寫算法。
 """
 
   [[params.socialIcons]]
-  name = "Github"
-  url = "https://github.com/dhij"
+  name = "Linkedin"
+ url = "https://www.linkedin.com/in/%E5%AE%B6%E7%91%9E-%E5%BC%B5-014904277/"
 
-  [[params.socialIcons]]
-  name = "Youtube"
-  url = "https://www.youtube.com/@dhij"
+#  [[params.socialIcons]]
+#  name = "Youtube"
+#  url = "https://www.youtube.com/@dhij"
 
-  [[params.socialIcons]]
-  name = "Rss"
-  url = "index.xml"
+# [[params.socialIcons]]
+# name = "Rss"
+# url = "index.xml"
 
 [[menu.main]]
 identifier = "categories"
