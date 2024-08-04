@@ -3,8 +3,8 @@ baseURL = 'https://raychang987.github.io/jrchang.github.io/'
 languageCode = 'en-us'
 theme = 'PaperMod'
 enableEmoj =  true
-canonifyURLs = true
-RelativeURLs = true
+canonifyURLs = false
+
 googleAnalytics = ""
 enableRobotsTXT = true
 Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
